@@ -37,3 +37,35 @@
     "layout/sidebar",
     "layout/json_cv"
 ;
+
+/* ── Custom overrides ── */
+
+/* Bigger avatar */
+.author__avatar img {
+  max-width: 200px;
+}
+
+/* Center sidebar content */
+.author__avatar,
+.author__content,
+.author__urls-wrapper {
+  text-align: center;
+}
+
+.author__urls {
+  justify-content: center;
+}
+
+/* Wider sidebar column + adjusted page width */
+@media (min-width: 64em) {
+  .sidebar {
+    float: left;
+    width: 22%;
+  }
+
+  .page,
+  .archive {
+    float: right;
+    width: 74%;
+  }
+}
