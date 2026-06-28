@@ -19,17 +19,14 @@
     {% if author.email %}
       <p class="author__email"><a href="mailto:{{ author.email }}">{{ author.email }}</a></p>
     {% endif %}
-  </div>
-
-  <div class="author__urls-wrapper">
-    <ul class="author__urls social-icons" style="display: flex; flex-direction: row; gap: 14px; padding: 0; list-style: none;">
+    <div class="author__social">
       {% if author.github %}
-        <li><a href="https://github.com/{{ author.github }}" title="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true" style="font-size: 1.4em;"></i></a></li>
+        <a href="https://github.com/{{ author.github }}" title="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i></a>
       {% endif %}
       {% if author.letterboxd %}
-        <li><a href="{{ author.letterboxd }}" title="Letterboxd" target="_blank" rel="noopener noreferrer"><i class="fas fa-fw fa-film" aria-hidden="true" style="font-size: 1.4em;"></i></a></li>
+        <a href="{{ author.letterboxd }}" title="Letterboxd" target="_blank" rel="noopener noreferrer"><i class="fas fa-fw fa-film" aria-hidden="true"></i></a>
       {% endif %}
-    </ul>
+    </div>
   </div>
 
 </div>
