@@ -40,20 +40,46 @@
 
 /* ── Custom overrides ── */
 
-/* Bigger avatar */
+/* Avatar size */
 .author__avatar img {
   max-width: 200px;
 }
 
-/* Center sidebar content */
+/* Mobile: bigger avatar */
+@media (max-width: 63.9em) {
+  .author__avatar {
+    display: block !important;
+    width: 100px !important;
+    height: 100px !important;
+    margin: 0 auto 0.5em auto;
+  }
+  .author__avatar img {
+    max-width: 100px;
+    border-radius: 50%;
+  }
+  .author__content {
+    text-align: center;
+  }
+}
+
+/* Center sidebar content on desktop */
 .author__avatar,
-.author__content,
-.author__urls-wrapper {
+.author__content {
   text-align: center;
 }
 
-.author__urls {
+/* Social icons row — always visible, no dropdown */
+.author__social {
+  display: flex;
+  gap: 14px;
+  margin-top: 8px;
+  font-size: 1.4em;
   justify-content: center;
+}
+
+.author__social a {
+  color: inherit;
+  text-decoration: none;
 }
 
 /* Right-align Research + CV + theme toggle */
