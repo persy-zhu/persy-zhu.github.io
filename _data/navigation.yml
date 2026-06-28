@@ -1,9 +1,6 @@
 # Navigation header links
 
 main:
-  - title: "About me"
-    url: /
-
   - title: "Research"
     url: /publications/
 
