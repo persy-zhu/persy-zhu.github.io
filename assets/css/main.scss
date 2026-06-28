@@ -58,12 +58,10 @@
 
 /* Right-align Research + CV + theme toggle */
 .greedy-nav .visible-links {
-  display: flex !important;
-  align-items: center;
   width: 100%;
 }
 .greedy-nav .visible-links > li:first-child {
-  margin-right: auto !important;
+  width: 100%;
 }
 
 /* Wider sidebar column + adjusted page width */
